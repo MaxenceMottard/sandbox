@@ -12,6 +12,7 @@
 		1AD34BB62C89B42B00DD749E /* AppleSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD34BB52C89B42B00DD749E /* AppleSlider.swift */; };
 		1AD34BB82C89B42D00DD749E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AD34BB72C89B42D00DD749E /* Assets.xcassets */; };
 		1AD34BBB2C89B42D00DD749E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AD34BBA2C89B42D00DD749E /* Preview Assets.xcassets */; };
+		D0BA880B2C98B4C00075A7CA /* PublishInstagramStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BA880A2C98B4B20075A7CA /* PublishInstagramStory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,8 @@
 		1AD34BB52C89B42B00DD749E /* AppleSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleSlider.swift; sourceTree = "<group>"; };
 		1AD34BB72C89B42D00DD749E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1AD34BBA2C89B42D00DD749E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D0BA880A2C98B4B20075A7CA /* PublishInstagramStory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublishInstagramStory.swift; sourceTree = "<group>"; };
+		D0BA880C2C98CA920075A7CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +40,7 @@
 		1A791F242C98B35C006AA0E4 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				D0BA880A2C98B4B20075A7CA /* PublishInstagramStory.swift */,
 				1A32F82F2C89EC790035DED7 /* AvPlayerTest.swift */,
 				1AD34BB52C89B42B00DD749E /* AppleSlider.swift */,
 			);
@@ -62,6 +66,7 @@
 		1AD34BB22C89B42B00DD749E /* Sandbox */ = {
 			isa = PBXGroup;
 			children = (
+				D0BA880C2C98CA920075A7CA /* Info.plist */,
 				1A791F242C98B35C006AA0E4 /* Tests */,
 				1AD34BB32C89B42B00DD749E /* SandboxApp.swift */,
 				1AD34BB72C89B42D00DD749E /* Assets.xcassets */,
@@ -148,6 +153,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0BA880B2C98B4C00075A7CA /* PublishInstagramStory.swift in Sources */,
 				1AD34BB62C89B42B00DD749E /* AppleSlider.swift in Sources */,
 				1A32F8302C89EC790035DED7 /* AvPlayerTest.swift in Sources */,
 				1AD34BB42C89B42B00DD749E /* SandboxApp.swift in Sources */,
@@ -287,6 +293,7 @@
 				DEVELOPMENT_TEAM = S4J5D3N22R;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Sandbox/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -316,6 +323,7 @@
 				DEVELOPMENT_TEAM = S4J5D3N22R;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Sandbox/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
