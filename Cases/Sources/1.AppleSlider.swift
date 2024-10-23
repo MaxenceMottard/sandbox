@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  1.AppleSlider.swift
 //  Sandbox
 //
 //  Created by Maxence Mottard on 05/09/2024.
@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+#if os(iOS)
 struct AppleSlider: View {
     @State private var isDragging = false
     @State private var draggingValue: Float = 0
@@ -87,3 +88,4 @@ struct AppleSlider_Previews: View {
 #Preview {
     AppleSlider_Previews()
 }
+#endif

@@ -8,11 +8,13 @@
 import SwiftUI
 import PhotosUI
 
-struct PublishInstagramStoryView: View {
+public struct PublishInstagramStoryView: View {
     @State var pickedItem: PhotosPickerItem? = nil
     @State var imageData: Data? = nil
 
-    var body: some View {
+    public init() {}
+
+    public var body: some View {
         VStack {
             PhotosPicker(
                 "Pick a picture",

@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Cases
 
 @main
 struct SandboxApp: App {

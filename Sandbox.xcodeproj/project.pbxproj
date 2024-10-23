@@ -7,51 +7,62 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1A32F8302C89EC790035DED7 /* AvPlayerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A32F82F2C89EC790035DED7 /* AvPlayerTest.swift */; };
+		1A12F76C2CC94FEB0087CA51 /* Cases in Frameworks */ = {isa = PBXBuildFile; productRef = 1A12F76B2CC94FEB0087CA51 /* Cases */; };
 		1AD34BB42C89B42B00DD749E /* SandboxApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD34BB32C89B42B00DD749E /* SandboxApp.swift */; };
-		1AD34BB62C89B42B00DD749E /* AppleSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD34BB52C89B42B00DD749E /* AppleSlider.swift */; };
 		1AD34BB82C89B42D00DD749E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AD34BB72C89B42D00DD749E /* Assets.xcassets */; };
-		1AD34BBB2C89B42D00DD749E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AD34BBA2C89B42D00DD749E /* Preview Assets.xcassets */; };
-		D0BA880B2C98B4C00075A7CA /* PublishInstagramStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BA880A2C98B4B20075A7CA /* PublishInstagramStory.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		1ACC37782CC94F02001E8915 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AD34BA82C89B42B00DD749E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1AD34BAF2C89B42B00DD749E;
+			remoteInfo = Sandbox;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		1A32F82F2C89EC790035DED7 /* AvPlayerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvPlayerTest.swift; sourceTree = "<group>"; };
+		1ACC37742CC94F02001E8915 /* SandboxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SandboxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1ACC377D2CC94F59001E8915 /* Cases */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Cases; sourceTree = SOURCE_ROOT; };
 		1AD34BB02C89B42B00DD749E /* Sandbox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sandbox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AD34BB32C89B42B00DD749E /* SandboxApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SandboxApp.swift; sourceTree = "<group>"; };
-		1AD34BB52C89B42B00DD749E /* AppleSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleSlider.swift; sourceTree = "<group>"; };
 		1AD34BB72C89B42D00DD749E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		1AD34BBA2C89B42D00DD749E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		D0BA880A2C98B4B20075A7CA /* PublishInstagramStory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublishInstagramStory.swift; sourceTree = "<group>"; };
-		D0BA880C2C98CA920075A7CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1AD34BAD2C89B42B00DD749E /* Frameworks */ = {
+		1ACC37712CC94F02001E8915 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1AD34BAD2C89B42B00DD749E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A12F76C2CC94FEB0087CA51 /* Cases in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1A791F242C98B35C006AA0E4 /* Tests */ = {
+		1A12F76A2CC94FEB0087CA51 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D0BA880A2C98B4B20075A7CA /* PublishInstagramStory.swift */,
-				1A32F82F2C89EC790035DED7 /* AvPlayerTest.swift */,
-				1AD34BB52C89B42B00DD749E /* AppleSlider.swift */,
 			);
-			path = Tests;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		1AD34BA72C89B42B00DD749E = {
 			isa = PBXGroup;
 			children = (
 				1AD34BB22C89B42B00DD749E /* Sandbox */,
+				1ACC377D2CC94F59001E8915 /* Cases */,
 				1AD34BB12C89B42B00DD749E /* Products */,
+				1A12F76A2CC94FEB0087CA51 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				1AD34BB02C89B42B00DD749E /* Sandbox.app */,
+				1ACC37742CC94F02001E8915 /* SandboxTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -66,26 +78,33 @@
 		1AD34BB22C89B42B00DD749E /* Sandbox */ = {
 			isa = PBXGroup;
 			children = (
-				D0BA880C2C98CA920075A7CA /* Info.plist */,
-				1A791F242C98B35C006AA0E4 /* Tests */,
 				1AD34BB32C89B42B00DD749E /* SandboxApp.swift */,
 				1AD34BB72C89B42D00DD749E /* Assets.xcassets */,
-				1AD34BB92C89B42D00DD749E /* Preview Content */,
 			);
 			path = Sandbox;
-			sourceTree = "<group>";
-		};
-		1AD34BB92C89B42D00DD749E /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				1AD34BBA2C89B42D00DD749E /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		1ACC37732CC94F02001E8915 /* SandboxTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1ACC377C2CC94F02001E8915 /* Build configuration list for PBXNativeTarget "SandboxTests" */;
+			buildPhases = (
+				1ACC37702CC94F02001E8915 /* Sources */,
+				1ACC37712CC94F02001E8915 /* Frameworks */,
+				1ACC37722CC94F02001E8915 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1ACC37792CC94F02001E8915 /* PBXTargetDependency */,
+			);
+			name = SandboxTests;
+			productName = SandboxTests;
+			productReference = 1ACC37742CC94F02001E8915 /* SandboxTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		1AD34BAF2C89B42B00DD749E /* Sandbox */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1AD34BBE2C89B42D00DD749E /* Build configuration list for PBXNativeTarget "Sandbox" */;
@@ -99,6 +118,9 @@
 			dependencies = (
 			);
 			name = Sandbox;
+			packageProductDependencies = (
+				1A12F76B2CC94FEB0087CA51 /* Cases */,
+			);
 			productName = Sandbox;
 			productReference = 1AD34BB02C89B42B00DD749E /* Sandbox.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +135,10 @@
 				LastSwiftUpdateCheck = 1540;
 				LastUpgradeCheck = 1540;
 				TargetAttributes = {
+					1ACC37732CC94F02001E8915 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 1AD34BAF2C89B42B00DD749E;
+					};
 					1AD34BAF2C89B42B00DD749E = {
 						CreatedOnToolsVersion = 15.4;
 					};
@@ -132,16 +158,23 @@
 			projectRoot = "";
 			targets = (
 				1AD34BAF2C89B42B00DD749E /* Sandbox */,
+				1ACC37732CC94F02001E8915 /* SandboxTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		1ACC37722CC94F02001E8915 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1AD34BAE2C89B42B00DD749E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1AD34BBB2C89B42D00DD749E /* Preview Assets.xcassets in Resources */,
 				1AD34BB82C89B42D00DD749E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -149,20 +182,66 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		1ACC37702CC94F02001E8915 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1AD34BAC2C89B42B00DD749E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0BA880B2C98B4C00075A7CA /* PublishInstagramStory.swift in Sources */,
-				1AD34BB62C89B42B00DD749E /* AppleSlider.swift in Sources */,
-				1A32F8302C89EC790035DED7 /* AvPlayerTest.swift in Sources */,
 				1AD34BB42C89B42B00DD749E /* SandboxApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		1ACC37792CC94F02001E8915 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1AD34BAF2C89B42B00DD749E /* Sandbox */;
+			targetProxy = 1ACC37782CC94F02001E8915 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		1ACC377A2CC94F02001E8915 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = maxencemottard.sandbox.SandboxTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sandbox.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Sandbox";
+			};
+			name = Debug;
+		};
+		1ACC377B2CC94F02001E8915 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = maxencemottard.sandbox.SandboxTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sandbox.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Sandbox";
+			};
+			name = Release;
+		};
 		1AD34BBC2C89B42D00DD749E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -289,7 +368,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Sandbox/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = S4J5D3N22R;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -306,9 +385,11 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = maxencemottard.sandbox.Sandbox;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "appletvos appletvsimulator iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = "1,2,3";
 			};
 			name = Debug;
 		};
@@ -319,7 +400,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Sandbox/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = S4J5D3N22R;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -336,15 +417,26 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = maxencemottard.sandbox.Sandbox;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "appletvos appletvsimulator iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = "1,2,3";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1ACC377C2CC94F02001E8915 /* Build configuration list for PBXNativeTarget "SandboxTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1ACC377A2CC94F02001E8915 /* Debug */,
+				1ACC377B2CC94F02001E8915 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		1AD34BAB2C89B42B00DD749E /* Build configuration list for PBXProject "Sandbox" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -364,6 +456,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1A12F76B2CC94FEB0087CA51 /* Cases */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Cases;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1AD34BA82C89B42B00DD749E /* Project object */;
 }
