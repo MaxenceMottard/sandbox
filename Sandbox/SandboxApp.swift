@@ -12,7 +12,7 @@ import Cases
 struct SandboxApp: App {
     var body: some Scene {
         WindowGroup {
-            PublishInstagramStoryView()
+            EmptyView()
         }
     }
 }
