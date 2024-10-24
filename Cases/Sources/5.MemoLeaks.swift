@@ -32,6 +32,7 @@ class MemoryLeaks {
         case withWeakKeyword
         case withoutWeakKeyword
         case catchingDependency
+        case implicitSelf
     }
 
     init(cathingSelfMethod type: CatchingSelfMethod) {
@@ -65,6 +66,17 @@ class MemoryLeaks {
             dependency2  = Dependency2(
                 checkIsEnabled: { [dependency] in
                     dependency.isEnabled
+                }
+            )
+
+        // Test when catching dependency
+        case .implicitSelf:
+            dependency2  = Dependency2(
+                checkIsEnabled: { [weak self] in
+                    guard let self else { return false }
+
+                    // implicit self
+                    return dependency.isEnabled
                 }
             )
 

@@ -70,4 +70,18 @@ class MemoryLeaks_Tests {
         #expect(weakDependency == nil)
         #expect(weakDependency2 == nil)
     }
+
+    @Test func useWeakSelfAndUseImplicitSelfAfterGuardLetToPreventMemoryLeak() async throws {
+        memoryLeaksInstance = MemoryLeaks(cathingSelfMethod: .implicitSelf)
+
+        weak var weakMemoryLeaks = memoryLeaksInstance
+        weak var weakDependency = memoryLeaksInstance?.dependency
+        weak var weakDependency2 = memoryLeaksInstance?.dependency2
+
+        memoryLeaksInstance = nil
+
+        #expect(weakMemoryLeaks == nil)
+        #expect(weakDependency == nil)
+        #expect(weakDependency2 == nil)
+    }
 }
