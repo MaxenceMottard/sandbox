@@ -41,7 +41,24 @@ class MemoryLeaks_Tests {
     }
 
     @Test func dontUseWeakSelfToPreventMemoryLeak() async throws {
-        memoryLeaksInstance = MemoryLeaks(cathingSelfMethod: .withoutWeakKeyword)
+        // This test failed because this method create a memory leak
+        withKnownIssue {
+            memoryLeaksInstance = MemoryLeaks(cathingSelfMethod: .withoutWeakKeyword)
+
+            weak var weakMemoryLeaks = memoryLeaksInstance
+            weak var weakDependency = memoryLeaksInstance?.dependency
+            weak var weakDependency2 = memoryLeaksInstance?.dependency2
+
+            memoryLeaksInstance = nil
+
+            #expect(weakMemoryLeaks == nil)
+            #expect(weakDependency == nil)
+            #expect(weakDependency2 == nil)
+        }
+    }
+
+    @Test func directlyCatchingDependencyToPreventMemoryLeak() async throws {
+        memoryLeaksInstance = MemoryLeaks(cathingSelfMethod: .catchingDependency)
 
         weak var weakMemoryLeaks = memoryLeaksInstance
         weak var weakDependency = memoryLeaksInstance?.dependency
@@ -49,8 +66,8 @@ class MemoryLeaks_Tests {
 
         memoryLeaksInstance = nil
 
-        #expect(weakMemoryLeaks != nil)
-        #expect(weakDependency != nil)
-        #expect(weakDependency2 != nil)
+        #expect(weakMemoryLeaks == nil)
+        #expect(weakDependency == nil)
+        #expect(weakDependency2 == nil)
     }
 }

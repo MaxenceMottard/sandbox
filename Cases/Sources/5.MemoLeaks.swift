@@ -31,6 +31,7 @@ class MemoryLeaks {
         case localVariable
         case withWeakKeyword
         case withoutWeakKeyword
+        case catchingDependency
     }
 
     init(cathingSelfMethod type: CatchingSelfMethod) {
@@ -56,6 +57,14 @@ class MemoryLeaks {
             dependency2  = Dependency2(
                 checkIsEnabled: {
                     self.dependency.isEnabled
+                }
+            )
+
+        // Test when catching dependency
+        case .catchingDependency:
+            dependency2  = Dependency2(
+                checkIsEnabled: { [dependency] in
+                    dependency.isEnabled
                 }
             )
 
