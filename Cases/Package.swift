@@ -15,6 +15,12 @@ let package = Package(
             targets: ["Cases"]
         ),
     ],
+    dependencies: [
+//        .package(
+//          url: "https://github.com/MaxenceMottard/SPMUtilitiesPlugins",
+//          from: "1.1.0"
+//        ),
+    ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
@@ -27,7 +33,10 @@ let package = Package(
             dependencies: [
                 "Utils",
             ],
-            path: "Sources"
+            path: "Sources",
+            plugins: [
+//                .plugin(name: "SwiftLintPlugin", package: "SPMUtilitiesPlugins")
+            ]
         ),
         .testTarget(
             name: "CasesTests",
